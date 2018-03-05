@@ -19,9 +19,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MovieListActivity">
-
-        </activity>
+        <activity android:name=".ui.MovieListActivity" />
+        <activity android:name=".ui.MovieDetailActivity" />
+        <activity android:name=".MovieDetailHeader" />
+        <activity android:name=".GridItem" />
+        <activity android:name=".MovieDetail" />
+        <activity android:name=".RatingsItem" />
+        <activity android:name=".trailer_item" />
+        <activity android:name=".FullMovieItems"></activity>
     </application>
 
 </manifest>

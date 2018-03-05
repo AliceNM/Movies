@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Movies</string>
     <string name="action_settings">Settings</string>
+    <string name="title_movie_detail">Movie Detail</string>
+    <string name="openWithWhatApp">Choose a browser to view this video</string>
+    <string name="openWithWhatSharing">Choose an app to share this trailer</string>
+
 </resources>

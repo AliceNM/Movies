@@ -1,13 +1,12 @@
-package com.example.alice.movies;
+package com.example.alice.movies.ui;
 
-import android.database.DataSetObserver;
 import android.graphics.Movie;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.view.ViewGroup;
 import android.widget.GridView;
-import android.widget.ListAdapter;
+
+import com.example.alice.movies.R;
+import com.example.alice.movies.util.MyDebug;
 
 import java.util.ArrayList;
 
