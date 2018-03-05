@@ -59,77 +59,20 @@ public class MovieListActivity extends AppCompatActivity {
         mAdapter = new MovieAdapter(this, android.R.layout.simple_list_item_1);
         mGridView.setAdapter(mAdapter);
 
+        //Check whether we're recreating a previously destroyedinstance
+        if (savedInstanceState != null) {
+            //Restore state members from saved instance
+            mSelectedView = savedInstanceState.getInt(STATE_VIEW_MODE);
+            mLastPosition = savedInstanceState.getInt(STATE_LIST_POSTITION);
+            if (mSelectedView==ViewByFavorites)queryFavorites();
+            else{
+
+            }
+        }
+
 
         
     }
 
-    private class MovieAdapter implements ListAdapter {
-        public MovieAdapter(MovieListActivity movieListActivity, int simple_list_item_1) {
-        }
 
-        @Override
-        public boolean areAllItemsEnabled() {
-            return false;
-        }
-
-        @Override
-        public boolean isEnabled(int position) {
-            return false;
-        }
-
-        @Override
-        public void registerDataSetObserver(DataSetObserver observer) {
-
-        }
-
-        @Override
-        public void unregisterDataSetObserver(DataSetObserver observer) {
-
-        }
-
-        @Override
-        public int getCount() {
-            return 0;
-        }
-
-        @Override
-        public Object getItem(int position) {
-            return null;
-        }
-
-        @Override
-        public long getItemId(int position) {
-            return 0;
-        }
-
-        @Override
-        public boolean hasStableIds() {
-            return false;
-        }
-
-        @Override
-        public View getView(int position, View convertView, ViewGroup parent) {
-            return null;
-        }
-
-        @Override
-        public int getItemViewType(int position) {
-            return 0;
-        }
-
-        @Override
-        public int getViewTypeCount() {
-            return 0;
-        }
-
-        @Override
-        public boolean isEmpty() {
-            return false;
-        }
-    }
-
-    private static class MyDebug {
-        public static void LOGD(String tag, String onCreate) {
-        }
-    }
 }

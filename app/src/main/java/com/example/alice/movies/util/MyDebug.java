@@ -6,7 +6,7 @@ import android.util.Log;
  * Created by alice on 3/2/18.
  */
 
-class MyDebug {
+public class MyDebug {
 
     private final static String APP_HEADER = "MOTB_";
     public static boolean debug = true;
